@@ -1,6 +1,7 @@
 import 'package:confetti/confetti.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:liquid_pull_to_refresh/liquid_pull_to_refresh.dart';
 import 'package:todoapp/features/todo_list/domain/entities/task_entity.dart';
 import 'package:todoapp/features/todo_list/presentation/bloc/task_cubit.dart';
 import 'package:todoapp/features/todo_list/presentation/widgets/components/task_component.dart';
@@ -38,16 +39,19 @@ class TodoListView extends StatelessWidget {
               gravity: 0.3,
               shouldLoop: false,
             ),
-            ListView.builder(
-              key: ValueKey(tasksList), // Force rebuild when tasksList changes
-              itemCount: tasksList.length,
-              itemBuilder: (context, index) {
-                return TaskComponent(
-                  task: tasksList[index],
-                  index: index,
-                  confettiController: _confettiController,
-                );
-              },
+            LiquidPullToRefresh(
+              onRefresh: BlocProvider.of<TaskCubit>(context).loadTasks,
+              child: ListView.builder(
+                key: ValueKey(tasksList), // Force rebuild when tasksList changes
+                itemCount: tasksList.length,
+                itemBuilder: (context, index) {
+                  return TaskComponent(
+                    task: tasksList[index],
+                    index: index,
+                    confettiController: _confettiController,
+                  );
+                },
+              ),
             ),
           ],
         );
