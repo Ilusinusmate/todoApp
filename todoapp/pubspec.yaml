@@ -1,0 +1,67 @@
+name: todoapp
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+ 
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+  path_provider: ^2.1.5
+  get_it: ^8.0.3
+  flutter_bloc: ^8.1.6
+  floating_snackbar: ^1.0.5
+  flutter_form_bloc: ^0.31.0
+  just_audio: ^0.9.36
+  just_audio_media_kit: ^2.0.0
+  media_kit_libs_linux: any # For Linux support
+  media_kit_libs_windows_audio: any # For Windows support
+  media_kit_libs_android_audio: ^1.0.3
+  confetti: ^0.8.0
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  isar_generator: ^3.1.0+1
+  # isar_inspector: any
+  build_runner: ^2.4.13
+  flutter_launcher_icons: ^0.13.1 # check for latest version
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon:
+    foreground_image: "assets/icon/app_icon.png"
+    background: "#3F51B5"
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
