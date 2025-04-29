@@ -39,32 +39,32 @@ Versão Linux: Ainda não disponível!
 
 Clique no botão de adicionar tarefa
 
-[Create a task](./releases/screenshots/create_task_dark.jpeg)
-[Create a task](./releases/screenshots/create_task_light.jpeg)
+![Create a task](./releases/screenshots/create_task_dark.jpeg)
+![Create a task](./releases/screenshots/create_task_light.jpeg)
 
 - Aumentar prioridade:
 
 Arraste a tarefa para a direita
 
-[Increasse Priority](./releases/screenshots/increase_priority.jpeg)
+![Increasse Priority](./releases/screenshots/increase_priority.jpeg)
 
 - Diminuir a prioridade:
 
 Arraste a tarefa para a esquerda
 
-[Decrease Priority](./releases/screenshots/decrease_priority.jpeg)
+![Decrease Priority](./releases/screenshots/decrease_priority.jpeg)
 
 - Deletar a tarefa:
 
 Segure na tarefa até aparecer um diálogo, selecione a opção "delete"
 
-[Delete Task](./releases/screenshots/delete_task.jpeg)
+![Delete Task](./releases/screenshots/delete_task.jpeg)
 
 ### Other Screens and More
 
-[Icone Principal](./releases/screenshots/icon.jpeg)
-[List View](./releases/screenshots/todo_list_dark.jpeg)
-[List View](./releases/screenshots/todo_list_light.jpeg)
+![Icone Principal](./releases/screenshots/icon.jpeg)
+![List View](./releases/screenshots/todo_list_dark.jpeg)
+![List View](./releases/screenshots/todo_list_light.jpeg)
 
 
 

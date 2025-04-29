@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:just_audio_media_kit/just_audio_media_kit.dart';
 import 'package:todoapp/common/data/data_source/shared_preferences.dart';
 import 'package:todoapp/common/data/notifiers/theme_notifier.dart';
-import 'package:todoapp/common/presentation/sounds.dart';
 import 'package:todoapp/common/presentation/theme.dart';
 import 'package:todoapp/core/database/init.dart';
 import 'package:todoapp/features/todo_list/presentation/pages/add_task_page.dart';
@@ -42,7 +41,7 @@ class MyApp extends StatelessWidget {
             theme: lightTheme,
             darkTheme: darkTheme,
             themeMode: theme,
-            
+
             routes: {
               '/init': (context) => const SplashPage(),
               '/home': (context) => TodoListPage(),
